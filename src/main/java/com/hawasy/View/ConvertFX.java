@@ -2,6 +2,8 @@ package com.hawasy.View;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -15,7 +17,16 @@ public class ConvertFX extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Pane mainPane = FXMLLoader.load(getClass().getResource("Convert.fxml"));
+        GridPane mainPane = FXMLLoader.load(getClass().getResource("Convert.fxml"));
+
+        //Si tu veux récupérer des éléments de ton fxml ici tu fais : (par exemple ton label
+
+//        System.out.println(mainPane.getChildren().get(1));
+        //Attention tu dois importer des javafx.scene.control...
+        //Mais pas des awt.*
+        Label lab = (Label)mainPane.getChildren().get(1);
+
+        System.out.println(lab.getText());//On affiche le text de ton label
 
         Scene scene = new Scene(mainPane, 700, 500 );
 
