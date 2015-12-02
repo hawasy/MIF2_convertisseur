@@ -18,7 +18,7 @@ public class ConvertFX extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         GridPane mainPane = FXMLLoader.load(getClass().getResource("Convert.fxml"));
-
+//knnjn
         //Si tu veux récupérer des éléments de ton fxml ici tu fais : (par exemple ton label
 
 //        System.out.println(mainPane.getChildren().get(1));
