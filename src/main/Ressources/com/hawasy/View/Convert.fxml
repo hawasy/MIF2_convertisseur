@@ -11,10 +11,9 @@
     <TextField fx:id="SOMME"
             GridPane.columnIndex="1" GridPane.rowIndex="8"/>
     <Label text="Devise d'entrée : " GridPane.columnIndex="0" GridPane.rowIndex="9"/>
-        <Label text="Devise de sortie : " GridPane.columnIndex="0" GridPane.rowIndex="10"/>
-    <HBox GridPane.columnIndex="1" GridPane.rowIndex="10">
-     <children>
+    <Label text="Devise de sortie : " GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+
+    <HBox alignment="BASELINE_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="14">
         <Button fx:id="convertButton" text="CONVERT" onAction="#handleConvertButtonAction"/>
-     </children>
    </HBox>
 </GridPane>

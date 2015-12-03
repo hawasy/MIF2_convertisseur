@@ -37,4 +37,9 @@ public class Devise {
     public boolean equals(Object o) {
         return o instanceof Devise && name.equals(((Devise) o).name);
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
