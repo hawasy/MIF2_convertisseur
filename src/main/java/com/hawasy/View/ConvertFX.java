@@ -18,17 +18,14 @@ public class ConvertFX extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         GridPane mainPane = FXMLLoader.load(getClass().getResource("Convert.fxml"));
-//knnjn
-        //Si tu veux récupérer des éléments de ton fxml ici tu fais : (par exemple ton label
 
-//        System.out.println(mainPane.getChildren().get(1));
-        //Attention tu dois importer des javafx.scene.control...
-        //Mais pas des awt.*
-        Label lab = (Label)mainPane.getChildren().get(1);
+        //System.out.println(mainPane.getChildren().get(1));
+       // Label lab = (Label)mainPane.getChildren().get(1);
 
-        System.out.println(lab.getText());//On affiche le text de ton label
+       // System.out.println(lab.getText());//On affiche le text de ton label
 
-        Scene scene = new Scene(mainPane, 700, 500 );
+
+        Scene scene = new Scene(mainPane, 500, 400 );
 
         primaryStage.setTitle("Convertisseur de devises");
         primaryStage.setScene(scene);
